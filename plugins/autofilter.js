@@ -1,4 +1,4 @@
-const asena = require('../events');
+const Bixby = require('../events');
 
 const {MessageType} = require('@adiwajshing/baileys');
 
@@ -10,7 +10,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-asena.addCommand({pattern: 'rafi', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+Bixby.addCommand({pattern: 'ZIYAN', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -24,11 +24,11 @@ asena.addCommand({pattern: 'rafi', fromMe: true, deleteCommand: true, desc: GM,}
 
     }));
 
-asena.addCommand({pattern: 'ameen', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
+Bixby.addCommand({pattern: 'midlaj', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
         var r_text = new Array ();
 
-        r_text[1] = "𝙸 𝙺𝚗𝚘𝚠 𝙷𝚎 𝙸𝚜 𝙼𝚢 𝙰𝚜𝚜𝚒𝚜𝚝𝚊𝚗𝚍";
+        r_text[1] = "i know he is my assistant";
 
         var i = Math.floor(2*Math.random())
 
@@ -42,7 +42,7 @@ asena.addCommand({pattern: 'ameen', fromMe: true, deleteCommand: true, desc: GN,
 
     if (Config.WORKTYPE == 'public') {
 
-        asena.addCommand({pattern: 'rafi', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
+        Bixby.addCommand({pattern: 'ZIYAN', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
             var r_text = new Array ();
 
@@ -56,11 +56,11 @@ asena.addCommand({pattern: 'ameen', fromMe: true, deleteCommand: true, desc: GN,
 
             }));
 
-        asena.addCommand({pattern: 'ameen', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
+        Bixby.addCommand({pattern: 'midlaj', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
                 var r_text = new Array ();
 
-                r_text[1] = "𝙸 𝙺𝚗𝚘𝚠 𝙷𝚎 𝙸𝚜 𝙼𝚢 𝙰𝚜𝚜𝚒𝚜𝚝𝚎𝚗𝚍";
+                r_text[1] = "i know he is my assistant";
           
                 var i = Math.floor(2*Math.random())
 
@@ -70,7 +70,7 @@ asena.addCommand({pattern: 'ameen', fromMe: true, deleteCommand: true, desc: GN,
 
                 }));    
 
-                asena.addCommand({pattern: 'helena', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
+                asena.addCommand({pattern: 'bixby', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
 
                     var r_text = new Array ();
 
