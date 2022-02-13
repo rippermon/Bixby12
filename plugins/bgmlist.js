@@ -22,7 +22,7 @@ Asena.addCommand({pattern: 'audio command', fromMe: false, desc: 'send all bgm c
    ` + config.LOGO_NAME + `
 
 ★✰✯★✰✯★✰✯★✰✯★✰✯★✰✯★
-𝐌𝐈𝐒𝐒 𝐇𝐄𝐋𝐄𝐍𝐀 𝐁𝐆𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
+Bixby Mowl Audio Commmand
 ★✰✯★✰✯★✰✯★✰✯★✰✯★✰✯★
 
 
@@ -445,7 +445,8 @@ Asena.addCommand({pattern: 'audio command', fromMe: false, desc: 'send all bgm c
 ➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪
 
 ➪➪➪➪➪➪➪➪➪➪➪➪➪➪
-𝐁𝐘 𝐌𝐈𝐒𝐒 𝐇𝐄𝐋𝐄𝐍𝐀 
+By Bixby Mowl
+©ZIYAN
 ➪➪➪➪➪➪➪➪➪➪➪➪➪➪
 `}) 
 
