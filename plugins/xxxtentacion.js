@@ -1,10 +1,10 @@
-/*Copyright (C) 2021 Ameen-Rafi.
+/*Copyright (C) 2021 ZIYAN.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-Ameen Ser-Rafi Ser */
+ZIYAN */
 
 
-const Asena = require('../events');
+const Bixby = require('../events');
 
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 
@@ -14,7 +14,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'xxxtentacion', fromMe: true, desc: 'random xxxtentacion images'}, (async (message, match) => {
+    Bixby.addCommand({pattern: 'xxxtentacion', fromMe: true, desc: 'random xxxtentacion images'}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -55,7 +55,7 @@ var i = Math.floor(15*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '𝐌𝐚𝐝𝐞 𝐁𝐲 𝐀𝐦𝐞𝐞𝐧𝐒𝐞𝐫 𝐀𝐧𝐝 𝐑𝐚𝐟𝐢💝'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '© Bixby Mowl'})
 
     }));
 
@@ -63,7 +63,7 @@ var i = Math.floor(15*Math.random())
 
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'xxxtentacion', fromMe: false, desc:'random xxxtentacion images '}, (async (message, match) => {
+    Bixby.addCommand({pattern: 'xxxtentacion', fromMe: false, desc:'random xxxtentacion images '}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -104,7 +104,7 @@ r_text[15] = "https://telegra.ph/file/00a4732edf86b425ecdea.jpg";
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '𝐌𝐚𝐝𝐞 𝐁𝐲 𝐀𝐦𝐞𝐞𝐧𝐒𝐞𝐫 𝐀𝐧𝐝 𝐑𝐚𝐟𝐢💝'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '© Bixby Mowl'})
 
     }));
 
