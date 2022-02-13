@@ -155,7 +155,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Miss Helena Working ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
+            chalk.green.bold('Bixby Mowl Working ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
           if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -170,7 +170,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```type``` *.update now* ```to update```\n\n```wait..wait..\n\n*Please Join First Out Support Group And Ask To Update*\n\n*https://chat.whatsapp.com/FJZ00oZignw25kjLELXWKu*' + degisiklikler + '```', MessageType.text
+                        '```type``` *.update now* ```to update```\n\n```wait..wait..\n\n*Please Join First Our Support Group And Ask To Update*\n\n*https://chat.whatsapp.com/DCMXCkQFxkAKIZPKb5MXnI*' + degisiklikler + '```', MessageType.text
                     ); 
                 } 
           }
@@ -178,7 +178,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        var ansk = 'https://gist.github.com/Luciferking1/daf327812f961f07e479fb7bba6c9546/raw'
+        var ansk = 'https://gist.github.com/RIPPER-SER/07f290891e86bfcf54523e113251d500/raw/5f499d2885183081a679cce64da165a7a57c862b/update%2520notice'
          
         while (getGMTh == 9 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -353,8 +353,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Helena ~______~*' +
-                                    '\n*🌀 Entho Evideyo Oru Preshnam Ullath Pole Thonunnu' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ Bixby Mowl ~______~*' +
+                                    '\n*🌀 error found please join support group https://chat.whatsapp.com/DCMXCkQFxkAKIZPKb5MXnI' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
