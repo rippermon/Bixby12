@@ -70,7 +70,7 @@ Bixby.addCommand({pattern: 'midlaj', fromMe: true, deleteCommand: true, desc: GN
 
                 }));    
 
-                asena.addCommand({pattern: 'bixby', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
+                Bixby.addCommand({pattern: 'bixby', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
 
                     var r_text = new Array ();
 
