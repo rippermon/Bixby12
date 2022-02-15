@@ -1,47 +1,28 @@
 const Bixby = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
 
-const {MessageType} = require('@adiwajshing/baileys');
+const Language = require('../language');
+const Lang = Language.getString('wallpaper');
 
-const GM = "it sends bot deploying link"
+Bixby.addCommand({pattern: 'git', fromMe: false, desc: "Gives github link of the bot"}, (async (message, match) => {
 
-const GN = "it sends bot deploying link"
+    var skl = await axios.get("https://imgur.com/gallery/ldWY3Zm.jpg", { responseType: 'arraybuffer' })
 
-const Config = require('../config');
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Bixby Mowl Created By Ziyan*
+*Creator number : wa.me/919446072492?text=Hi%20ziyan%20bro.%20*
 
-if (Config.WORKTYPE == 'private') {
+*Bot setting video : https://youtube.com/channel/UCGi-AvmiPaFczO44NkIkP9A*
 
-Bixby.addCommand({pattern: 'git', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+*Githublink (Setup)  :    https://github.com/RIPPER-SER/_Bixby_Mowl_*
 
-    var r_text = new Array ();
+*Audio commads :   https://github.com/RIPPER-SER/_Bixby_Mowl_/tree/master/uploads*
 
-    r_text[0] = "*https://github.com/RIPPER-SER/_Bixby_Mowl_*"; 
- 
-    var i = Math.floor(1*Math.random())
+*Sticker commads : https://github.com/RIPPER-SER/_Bixby_Mowl_/tree/master/Amalser*
 
-    await message.client.sendMessage(
+*Join our support group : https://chat.whatsapp.com/DCMXCkQFxkAKIZPKb5MXnI* 
 
-        message.jid,(r_text[i]), MessageType.text);
+*For More Updates Subscribe The Channel ☝*
+`}) 
 
-    }));
-    
-
-    }
-
-    if (Config.WORKTYPE == 'public') {
-
-        Bixby.addCommand({pattern: 'git', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
-
-            var r_text = new Array ();
-
-                 r_text[0] = "*https://github.com/RIPPER-SER/_Bixby_Mowl_*"; 
-
-                     var i = Math.floor(1*Math.random())
-
-                         await message.client.sendMessage(
-
-                               message.jid,(r_text[i]), MessageType.text);
-
-    }));
-    
-
-   }
+}));
