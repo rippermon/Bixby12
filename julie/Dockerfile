@@ -1,4 +1,4 @@
-FROM ripper/BixbyMowl:latest
+FROM ripper/BixbyMowl:beta
 
 RUN git clone https://github.com/RIPPER-SER/_Bixby_Mowl_ /root/Bixby
 WORKDIR /root/Bixby/
