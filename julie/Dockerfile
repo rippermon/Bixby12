@@ -1,10 +1,10 @@
-FROM fusuf/whatsasena:latest
+FROM ripper/BixbyMowl:latest
 
-RUN git clone https://github.com/RIPPER-SER/_Bixby_Mowl_ /root/WhatsAsenaDuplicated
-WORKDIR /root/WhatsAsenaDuplicated/
+RUN git clone https://github.com/RIPPER-SER/_Bixby_Mowl_ /root/Bixby
+WORKDIR /root/Bixby/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
-RUN git clone https://github.com/farhan-dqz/media
+RUN git clone https://github.com/ripperser/database
 
 CMD ["node", "bot.js"]
